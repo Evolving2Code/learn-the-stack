@@ -11,3 +11,4 @@ is teaching. Read in order for a running walkthrough of the stack.
 | 0003 | add /about route | A folder + page.tsx becomes a URL, with no config |
 | 0004 | link home to /about | Client-side navigation via next/link, vs. full page reload |
 | 0005 | CI-based snapshots | Playwright + GitHub Actions generate the visual filmstrip, since Termux can't run browser binaries locally |
+| 0006 | shadcn/ui init | Radix UI + Nova preset (Lucide/Geist); Button.tsx exists but unused; cn() helper introduced |
