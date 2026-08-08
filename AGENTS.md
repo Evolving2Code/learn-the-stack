@@ -1,9 +1,26 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# AGENTS.md
 
-# This is NOT the Next.js you know
+## Project
+Next.js (App Router) + TypeScript + Tailwind + shadcn/ui (Radix under
+the hood) + Framer Motion + Lucide icons. Demo app: a habit tracker,
+used purely as a vehicle to learn the stack.
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+## Commands
+- `npm run dev` — start dev server (localhost:3000)
+- `npm run build` — production build
+- `npm run lint` — lint
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+## Conventions
+- Commits are small and isolated: one visible/structural change per
+  commit. See docs/journal/ for the running explainer log.
+- Every commit gets a matching entry in docs/journal/NNNN-slug.md
+  (see docs/journal/README.md for the template and index).
+- No `src/` directory — `app/` lives at project root.
+- shadcn components are added via CLI into components/ui/ and are
+  owned/edited directly, not treated as a locked dependency.
 
-<!-- END:nextjs-agent-rules -->
+## Structure
+- app/            routes (App Router: folder = URL segment)
+- components/ui/  shadcn-generated components
+- docs/journal/   one markdown file per commit, explainer-style
+- docs/snapshots/ screenshots of the app at each commit
