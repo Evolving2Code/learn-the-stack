@@ -13,6 +13,9 @@ used purely as a vehicle to learn the stack.
 ## Conventions
 - Commits are small and isolated: one visible/structural change per
   commit. See docs/journal/ for the running explainer log.
+- The docs/journal/README.md index is updated in the SAME commit as
+  the feature/change it documents — not a separate housekeeping
+  commit. Keeps history dense and each commit fully self-contained.
 - Every commit gets a matching entry in docs/journal/NNNN-slug.md
   (see docs/journal/README.md for the template and index).
 - No `src/` directory — `app/` lives at project root.
