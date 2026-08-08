@@ -7,6 +7,9 @@ on:
         description: 'Space-separated hash:slug pairs, e.g. "c174e3c:0004-link-home-to-about"'
         required: true
 
+permissions:
+  contents: write
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
